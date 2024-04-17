@@ -13,6 +13,7 @@ session_start();
     <script src="Content/js/jquery.min.js"></script>
     <!-- Custom Theme files -->
     <!--theme-style-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="Content/css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link href="Content/css2/style.css" rel='stylesheet' type='text/css' />
     <link href="Content/Content2/css/bootstrap.min.css" rel="stylesheet" />
@@ -22,6 +23,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="<?php echo htmlspecialchars($keywords); ?>" />
+    <link rel="stylesheet" href="Content/font/fontawesome-free-6.3.0-web/css/all.css">
     <script type="application/x-javascript">
     addEventListener("load", function() {
         setTimeout(hideURLbar, 0);
@@ -30,10 +32,14 @@ session_start();
     function hideURLbar() {
         window.scrollTo(0, 1);
     }
+        <script>
+    $(document).ready(function() {
+        $('#myElement').fadeIn('slow');
+    });
+</script>
     </script>
     <link href='//fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="Content/font/fontawesome-free-6.3.0-web/css/all.css">
     <!-- start menu -->
     <script src="Content/js/bootstrap.min.js"></script>
     <!-- slide -->
@@ -53,7 +59,7 @@ session_start();
     <!-- //animation-effect -->
 </head>
 
-<body>
+    <body>
    
     <!--header-->
     <div class="header">
@@ -102,7 +108,7 @@ session_start();
                                                                 <li style="display: inline;"><a href="#"
                                                                         style="text-decoration:none; display: inline-block; padding: 10px;">Trang
                                                                         chủ</a></li>
-                                                                <li style="display: inline;"><a href="#"
+                                                                <li style="display: inline;"><a href="sanpham.php"
                                                                         style="text-decoration:none; display: inline-block; padding: 10px;">Sản phẩm</a>
                                                                 </li>
                                                                 <li style="display: inline;"><a href="login.php"
@@ -117,44 +123,46 @@ session_start();
                                     </nav>
                                   </div>
                                                      <div? class="clearfix"> </div>
-                                                                    <!---pop-up-box---->
-                                                                                                    <link href="Content/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
-                                                                                                    <script src="Content/js/jquery.magnific-popup.js" type="text/javascript"></script>
-                                                                                                    <!---//pop-up-box---->
-                                                                                                    <div id="small-dialog" class="mfp-hide">
-                                                                                                        <div class="search-top">
-                                                                                                            <div class="login">
-                                                                                                                <form action="#" method="get">
-                                                                                                                    <input type="submit" value="">
-                                                                                                                    <input type="text" name="keyword" value="Nhập vào từ khóa..." onfocus="this.value = '';"
-                                                                                                                        onblur="if (this.value == '') {this.value = '';}">
-                                                                                                                </form>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                        <script>
-                                                                                        $(document).ready(function() {
-                                                                                            $('.popup-with-zoom-anim').magnificPopup({
-                                                                                                type: 'inline',
-                                                                                                fixedContentPos: false,
-                                                                                                fixedBgPos: true,
-                                                                                                overflowY: 'auto',
-                                                                                                closeBtnInside: true,
-                                                                                                preloader: false,
-                                                                                                midClick: true,
-                                                                                                removalDelay: 300,
-                                                                                                mainClass: 'my-mfp-zoom-in'
-                                                                                            });
-                                                                                        });
-                                                                                        </script>
-                                                                                        <!---->
-                                                                                    </div?>
+                                                                  <!---pop-up-box---->
+                                                                 <!---pop-up-box---->
+                <link href="Content/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+                <script src="Content/js/jquery.magnific-popup.js" type="text/javascript"></script>
+                <!---//pop-up-box---->
+                <div class="mfp-hide">
+                    <div class="search-top">
+                        <div class="login">
+
+                            <form action="timkiem.php" method="get">
+                                <input type="submit" value="">
+                                <input type="text" name="keyword" value="Nhập vào từ khóa..." >
+                            </form>
+                        
+                        </div>
+                    </div>
+                </div>
+                <script>
+                $(document).ready(function() {
+                    $('.popup-with-zoom-anim').magnificPopup({
+                        type: 'inline',
+                        fixedContentPos: false,
+                        fixedBgPos: true,
+                        overflowY: 'auto',
+                        closeBtnInside: true,
+                        preloader: false,
+                        midClick: true,
+                        removalDelay: 300,
+                        mainClass: 'my-mfp-zoom-in'
+                    });
+                });
+                </script>
+            </div>
                         </div>
                         <div? class="clearfix"> </div>
-
                         <?php include 'sanphambanchay.php'; ?>
-                        <!-- Footer -->
+
                         <?php include 'phantrang.php'; ?>
+                        
+
                         <?php include 'design.php';?>
  
                         <?php include 'footer.php'; ?>

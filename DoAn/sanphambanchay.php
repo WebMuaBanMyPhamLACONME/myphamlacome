@@ -15,6 +15,9 @@ if(isset($_GET['trang'])){
 } else {
     $page = '';
 }
+if($page == 'timkiem'){
+    include(timkiem.php);
+}
 
 if($page == '' || $page == 1){
     $begin = 0;
@@ -29,9 +32,7 @@ $result = "SELECT TenSanPham, Gia, SoLuotXem, Hinh1, Soluong, SoLuongDaBan, Mota
 $result = $conn->query($result);
 ?>
 
-<div class="container__sale">
-    <div class="box"></div>
-</div>
+
 <div class="container__sale" >
     <h1 style="text-align: center;">Gợi ý mua sắm</h1>
     <div class="row_sale" > 

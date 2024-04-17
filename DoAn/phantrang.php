@@ -5,45 +5,33 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    // Lắng nghe sự kiện click cho các liên kết trang
+    $(".list_trang a").on("click", function(event) {
+        // Ngăn chặn hành động mặc định của liên kết
+        event.preventDefault();
+        
+        // Lấy href của liên kết đã click
+        var href = $(this).attr("href");
+        
+        // Gửi yêu cầu AJAX để tải nội dung của trang mới
+        $.ajax({
+            url: href,
+            method: "GET",
+            success: function(response) {
+                // Cập nhật nội dung của trang hiện tại với nội dung mới
+                $("body").html(response);
+            },
+            error: function(xhr, status, error) {
+                console.error("Lỗi khi tải trang mới:", error);
+            }
+        });
+    });
+});
+</script>
 
-<style>
-   
-   .trang {
-        position: absolute;
-       
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .list_trang {
-        list-style: none;
-        padding: 0;
-        text-align: center; /* Canh giữa các phần tử trong ul */
-    }
-    .list_trang li {
-        display: inline-block; /* Hiển thị các mục li trên cùng một hàng */
-        margin: 0 5px; /* Khoảng cách giữa các mục li */
-    }
-
-
-    ul.list_trang{
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
-    ul.list_trang li a{
-        float:left;
-        padding: 5px 13px;
-        margin: 5px;
-        background-color: #212529;
-       color :white;
-       display:block;
-       color :white;
-        text-decoration:none;
-        text-align:center;
-        text-decoration:none;
-    }
-    
-</style>
 <body>
     
    
@@ -63,7 +51,7 @@
             $soTrangHienThi = min(3, $trang); 
 
             ?>
-            <div class="trang">
+            <div id="trang" class="trang">
                 <ul class="list_trang">
                     <?php
                     for ($i = 1; $i <= $soTrangHienThi; $i++) {
@@ -75,6 +63,7 @@
                     }
                     ?>
                 </ul>
-</div>
+            </div>
+                </div>
 </body>
 </html>
