@@ -6,7 +6,7 @@
                     <div class="col-lg-3 col-sm-6 pb-3" style="margin-left:-100px">
                         <div class="footer-menu">
 
-                            <img src="Content/Content2/images/logo2.png" />
+                            <img src="../Content/Content2/images/logo2.png" />
                             <p>Nhắc đến Lancôme, phái đẹp lại nhớ tới đây là hãng mỹ phẩm cao cấp. Với những dòng mỹ
                                 phẩm hổ trợ việc làm đẹp, từ phần nền, son môi, kem dưỡng. Từ các sản phẩm dùng để trang
                                 điểm tới chăm sóc da. Nhưng thứ tạo nên danh tiếng của Lancome hay chính là nơi bắt
@@ -122,8 +122,8 @@
                         <p>We ship with:</p>
                         <div class="card-wrap ps-2">
 
-                            <img src="Content/Content2/images/dhl.png" alt="visa">
-                            <img src="Content/Content2/images/shippingcard.png" alt="mastercard">
+                            <img src="../Content/Content2/images/dhl.png" alt="visa">
+                            <img src="../Content/Content2/images/shippingcard.png" alt="mastercard">
                         </div>
                     </div>
                 </div>
@@ -131,11 +131,11 @@
                     <div class="payment-method d-flex">
                         <p>Payment options:</p>
                         <div class="card-wrap ps-2">
-                            <img src="Content/Content2/images/visa.jpg"/>
+                            <img src="../Content/Content2/images/visa.jpg"/>
 
-                            <img src="Content/Content2/images/mastercard.jpg" />
+                            <img src="../Content/Content2/images/mastercard.jpg" />
 
-                            <img src="Content/Content2/images/paypal.jpg" />
+                            <img src="../Content/Content2/images/paypal.jpg" />
 
                         </div>
                     </div>

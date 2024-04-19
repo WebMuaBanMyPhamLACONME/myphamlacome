@@ -27,14 +27,14 @@
         <!-- Carousel Items -->
         <div class="carousel-inner">
             <div class="item active">
-                <img style="width: 2000px; height:529px" src="images/banner5.jpg" alt="Banner 1">
+                <img style="width: 2000px; height:529px" src="../images/banner5.jpg" alt="Banner 1">
             </div>
 
             <div class="item">
-                <img style="width: 2000px; height:529px" src="images/banner3.jpg" alt="Banner 2">
+                <img style="width: 2000px; height:529px" src="../images/banner3.jpg" alt="Banner 2">
             </div>
             <div class="item">
-                <img style="width: 2000px; height: 529px" src="images/lancome-lazada-khuyen-mai-10.10.jpg"
+                <img style="width: 2000px; height: 529px" src="../images/lancome-lazada-khuyen-mai-10.10.jpg"
                     alt="Banner 3">
             </div>
         </div>
